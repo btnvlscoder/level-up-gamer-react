@@ -1,0 +1,20 @@
+/* LAYOUT GENERAL */
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  min-height: 100vh;
+  background-color: var(--clr-main);
+}
+
+aside {
+  padding: 2rem;
+  padding-right: 0;
+  color: var(--clr-white);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--clr-main);
+}

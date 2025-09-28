@@ -1,0 +1,37 @@
+/* VAR CLR*/
+:root {
+  --clr-main: #000000;
+  --clr-main-light: #0c0c0c;
+  --clr-white: #FFFFFF;
+  --clr-gray: #D3D3D3;
+  --clr-accent-blue: #1E90FF;
+  --clr-accent-green: #39FF14;
+  --clr-accent-red: #FF3333;
+}
+
+/* TIPOGRAFIAS Y RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

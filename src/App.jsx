@@ -1,16 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {Layout} from './components/Layout.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
-    <>
-
-    </>
+    <Layout activePage="home">
+      <div>
+        <h1>Bienvenido a Level-Up Gamer</h1>
+        <h3>Migracion en proceso...</h3>
+      </div>
+    </Layout>
   )
 }
-
-export default App
