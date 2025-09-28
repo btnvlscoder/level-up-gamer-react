@@ -1,20 +1,101 @@
 /* LAYOUT GENERAL */
 .wrapper {
-  display: grid;
-  grid-template-columns: 20% 1fr;
-  min-height: 100vh;
-  background-color: var(--clr-main);
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    min-height: 100vh;
+    background-color: var(--clr-main);
 }
 
 aside {
-  padding: 2rem;
-  padding-right: 0;
-  color: var(--clr-white);
-  position: sticky;
-  top: 0;
-  height: 100vh;
+    padding: 2rem;
+    padding-right: 0;
+    color: var(--clr-white);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    background-color: var(--clr-main-light);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 1rem;
+    padding: 3rem;
+    overflow-y: auto;
+}
+
+.logo {
+    font-weight: 200;
+    font-size: 1.8rem;
+    color: var(--clr-accent-blue);
+    text-align: left;
+    white-space: nowrap;    
+}
+
+.logojpg {
+    border-radius: 2rem;
+    display: block;
+    max-width: 250px;
+    margin: 2.5rem auto;
+    transform: translateX(-20px);
+}
+.menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--clr-main);
+  gap: .5rem;
+}
+
+.btn-menu {
+  background-color: transparent;
+  border: 0;
+  color: var(--clr-white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-menu.active {
+  background-color: var(--clr-main-light);
+  color: var(--clr-accent-green);
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: relative;
+}
+
+.btn-menu.active:after {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  bottom: 100%;
+  right: 0;
+  background-color: transparent;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0 1rem 0 var(--clr-main-light);
+}
+
+.btn-menu.active:before {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  top: 100%;
+  right: 0;
+  background-color: transparent;
+  border-top-right-radius: 1rem;
+  box-shadow: 0 -1rem 0 var(--clr-main-light);
+}
+
+.btn-carrito {
+  margin-top: 2rem;
 }
